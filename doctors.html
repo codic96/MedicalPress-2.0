@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Doctors | MedicalPress 2.0</title>
+    <meta name="description" content="Browse the MedicalPress team of physicians, specialists, and telehealth doctors.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body class="theme-light">
+    <header class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3 sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">MedicalPress</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="doctors.html">Doctors</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="appointment.html">Appointment</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          </ul>
+          <button id="theme-toggle" class="btn btn-outline-primary ms-lg-3" type="button" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-5">
+        <div class="container">
+          <div class="row align-items-center mb-5">
+            <div class="col-lg-8">
+              <p class="eyebrow text-primary">Physician directory</p>
+              <h1 class="fw-bold">Find the right specialist for your care plan.</h1>
+              <p class="text-muted">Filter by specialty, appointment type, or language preference to connect with the best clinician.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a class="btn btn-primary" href="appointment.html">Schedule visit</a>
+            </div>
+          </div>
+
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6 col-md-4">
+              <div class="form-floating">
+                <select class="form-select" id="filter-specialty" aria-label="Filter by specialty">
+                  <option selected>All specialties</option>
+                  <option value="1">Primary Care</option>
+                  <option value="2">Cardiology</option>
+                  <option value="3">Dermatology</option>
+                  <option value="4">Orthopedics</option>
+                </select>
+                <label for="filter-specialty">Specialty</label>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="form-floating">
+                <select class="form-select" id="filter-language" aria-label="Filter by language">
+                  <option selected>All languages</option>
+                  <option value="1">English</option>
+                  <option value="2">Spanish</option>
+                  <option value="3">Hindi</option>
+                  <option value="4">Urdu</option>
+                </select>
+                <label for="filter-language">Language</label>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="form-floating">
+                <select class="form-select" id="filter-availability" aria-label="Filter by availability">
+                  <option selected>Any availability</option>
+                  <option value="1">Next 24 hours</option>
+                  <option value="2">Tomorrow</option>
+                  <option value="3">This week</option>
+                </select>
+                <label for="filter-availability">Availability</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <article class="card h-100 border-0 shadow-sm doctor-card">
+                <div class="card-body p-4">
+                  <div class="d-flex align-items-start gap-3 mb-3">
+                    <div class="avatar">SH</div>
+                    <div>
+                      <h3 class="h5 mb-1">Dr. Sarah Hudson</h3>
+                      <p class="mb-1 text-muted">Primary Care Specialist</p>
+                      <span class="badge bg-success">English, Spanish</span>
+                    </div>
+                  </div>
+                  <p class="text-muted">Experienced family medicine physician focused on wellness and chronic care management.</p>
+                  <ul class="list-unstyled text-muted small mb-4">
+                    <li><i class="bi bi-building me-2"></i>American Board of Family Medicine</li>
+                    <li><i class="bi bi-star-fill text-warning me-2"></i>4.9 rating from 180 reviews</li>
+                  </ul>
+                  <a class="btn btn-sm btn-primary" href="appointment.html">Book with Dr. Hudson</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="card h-100 border-0 shadow-sm doctor-card">
+                <div class="card-body p-4">
+                  <div class="d-flex align-items-start gap-3 mb-3">
+                    <div class="avatar">EC</div>
+                    <div>
+                      <h3 class="h5 mb-1">Dr. Eric Collins</h3>
+                      <p class="mb-1 text-muted">Cardiologist</p>
+                      <span class="badge bg-info">English</span>
+                    </div>
+                  </div>
+                  <p class="text-muted">Specialized in heart health, hypertension, and preventive cardiology.</p>
+                  <ul class="list-unstyled text-muted small mb-4">
+                    <li><i class="bi bi-building me-2"></i>Board-certified cardiologist</li>
+                    <li><i class="bi bi-star-fill text-warning me-2"></i>4.8 rating from 140 reviews</li>
+                  </ul>
+                  <a class="btn btn-sm btn-primary" href="appointment.html">Book with Dr. Collins</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="card h-100 border-0 shadow-sm doctor-card">
+                <div class="card-body p-4">
+                  <div class="d-flex align-items-start gap-3 mb-3">
+                    <div class="avatar">ML</div>
+                    <div>
+                      <h3 class="h5 mb-1">Dr. Maya Lee</h3>
+                      <p class="mb-1 text-muted">Dermatologist</p>
+                      <span class="badge bg-warning">English, Hindi</span>
+                    </div>
+                  </div>
+                  <p class="text-muted">Focused on skin wellness, cosmetic procedures, and dermatologic treatments.</p>
+                  <ul class="list-unstyled text-muted small mb-4">
+                    <li><i class="bi bi-building me-2"></i>Certified dermatologist</li>
+                    <li><i class="bi bi-star-fill text-warning me-2"></i>4.9 rating from 210 reviews</li>
+                  </ul>
+                  <a class="btn btn-sm btn-primary" href="appointment.html">Book with Dr. Lee</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-md-8">
+              <div class="rounded-4 p-4 shadow-sm bg-body">
+                <h2 class="h4">Patient testimonials</h2>
+                <p class="text-muted">“Professional, attentive, and easy to book online. The telehealth visit was seamless.”</p>
+                <p class="text-muted mb-0"><strong>— Emily R., Austin</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer py-5 bg-dark text-white">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <h5 class="mb-3">MedicalPress Clinic</h5>
+            <p class="text-muted">A modern healthcare website template built for clinics, hospitals, and telehealth services.</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="mb-3">Quick links</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="appointment.html">Appointment</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="mb-3">Contact</h5>
+            <p class="text-muted mb-1"><i class="bi bi-telephone-fill me-2"></i>+1 (800) 555-0199</p>
+            <p class="text-muted mb-0"><i class="bi bi-envelope-fill me-2"></i>hello@medicalpress.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
